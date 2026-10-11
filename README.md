@@ -108,3 +108,4 @@ db/seed.sql      Optional sample announcements
 - **Members-only documents.** Downloads are public right now. To restrict them, add homeowner accounts to Cognito (a separate `member` group) and put the JWT authorizer on `/documents` routes too.
 - **Larger email lists.** Announcement emails send in a loop inside the Lambda, which is fine for a few hundred homes. For more, push each send onto an SQS queue.
 - **Infrastructure as code.** Steps 1–7 can be captured in AWS SAM, CDK, or Terraform so the setup is repeatable.
+# site
